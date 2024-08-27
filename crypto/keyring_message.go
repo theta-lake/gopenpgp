@@ -341,6 +341,7 @@ func asymmetricDecryptStream(
 			}
 			return time.Unix(verifyTime, 0)
 		},
+		InsecureAllowUnauthenticatedMessages: true,
 	}
 
 	if verificationContext != nil {
